@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Reservation{% endblock %}
+
+{% block body %}
+        <main class="main">
+
+        <!-- breadcrumb -->
+        <div class="site-breadcrumb" style="background: url({{asset('img/breadcrumb/01.jpg')}})">
+            <div class="container">
+                <h2 class="breadcrumb-title">Table de resérvations</h2>
+                <ul class="breadcrumb-menu">
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li class="active">Reservations</li>
+                </ul>
+            </div>
+        </div>
+        <!-- breadcrumb end -->
+        <div class="application py-120">
+            <div class="container">
+                <div class="application-form">
+                    <h3>Nouveau Reservation</h3>
+                     {{ include('reservation/_form.html.twig') }}
+                </div>
+            </div>
+           
+
+        </div>
+        </main>
+    <a href="{{ path('app_reservation_index') }}">back to list</a>
+{% endblock %}
