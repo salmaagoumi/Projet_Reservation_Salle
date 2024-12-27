@@ -31,7 +31,7 @@ Le projet est composé de plusieurs parties :
 3. **Front-end** : Interface utilisateur permettant de réserver une salle, afficher les disponibilités, et visualiser les réservations via un calendrier.
 
 ## Détails techniques
-Les scripts SQL nécessaires à la création des tables de la base de données sont présents dans le dossier `reservation.sql`. Les relations entre les différentes entités sont gérées via l'ORM de Symfony.
+La base de données a été générée automatiquement , la structure de cette dernière se trouve dans le fichier reservation.sql
 
 ## Livrables
 - Dictionnaire de données
