@@ -45,7 +45,7 @@
                 <div class="header-top-wrap">
                     <div class="header-top-left">
                         <div class="header-top-social">
-                            <span>Follow Us: </span>
+                            <span>Suivez-nous: </span>
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-instagram"></i></a>
                             <a href="#"><i class="fab fa-youtube"></i></a>
@@ -56,13 +56,10 @@
                         <div class="header-top-contact">
                             <ul>
                                 <li>
-                                    <a href="#"><i class="far fa-location-dot"></i> 25/B Milford Road, New York</a>
+                                    <a href="#"><i class="far fa-location-dot"></i> 42 rue Paul Duez 59000 Lille − France</a>
                                 </li>
                                 <li>
-                                    <a href="mailto:info@example.com"><i class="far fa-envelopes"></i> info@example.com</a>
-                                </li>
-                                <li>
-                                    <a href="tel:+21236547898"><i class="far fa-phone-volume"></i> +2 123 654 7898</a>
+                                    <a href="mailto:virginie.grard@univ-lille.fr"><i class="far fa-envelopes"></i> virginie.grard@univ-lille.fr</a>
                                 </li>
                             </ul>
                         </div>
@@ -74,7 +71,7 @@
         <div class="main-navigation">
             <nav class="navbar navbar-expand-lg">
                 <div class="container position-relative">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="{{path('app_home')}}">
                         <img src="{{ asset('img/logo/logo.png') }}" alt="logo">
                     </a>
                     <div class="mobile-menu-right">
@@ -360,63 +357,32 @@
                 <div class="row footer-widget-wrapper pt-100 pb-70">
                     <div class="col-md-6 col-lg-4">
                         <div class="footer-widget-box about-us">
-                            <a href="#" class="footer-logo">
+                            <a href="{{path('app_home')}}" class="footer-logo">
                                 <img src="assets/img/logo/logo-light.png" alt="">
+
                             </a>
                             <p class="mb-3">
-                                We are many variations of passages available but the majority have suffered alteration
-                                in some form by injected humour words believable.
+                                Explorez nos programmes, événements et services pour réussir vos études et projets.
                             </p>
                             <ul class="footer-contact">
-                                <li><a href="tel:+21236547898"><i class="far fa-phone"></i>+2 123 654 7898</a></li>
-                                <li><i class="far fa-map-marker-alt"></i>25/B Milford Road, New York</li>
-                                <li><a href="mailto:info@example.com"><i
-                                            class="far fa-envelope"></i>info@example.com</a></li>
+                                <li><i class="far fa-map-marker-alt"></i>42 rue Paul Duez 59000 Lille − France</li>
+                                <li><a href="mailto:virginie.grard@univ-lille.fr"><i class="far fa-envelopes"></i> virginie.grard@univ-lille.fr</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-2">
                         <div class="footer-widget-box list">
-                            <h4 class="footer-widget-title">Quick Links</h4>
+                            <h4 class="footer-widget-title">Menu</h4>
                             <ul class="footer-list">
-                                <li><a href="#"><i class="fas fa-caret-right"></i> About Us</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> FAQ's</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> Testimonials</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> Terms Of Service</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> Privacy policy</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> Update News</a></li>
+                                <li><a href="{{path('app_home')}}"><i class="fas fa-caret-right"></i> Accueil</a></li>
+                                <li><a href="{{path('app_reservation_new')}}"><i class="fas fa-caret-right"></i> Reserver Maintenant</a></li>
+                                <li><a href="{{path('app_contact')}}"><i class="fas fa-caret-right"></i> Contact</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-widget-box list">
-                            <h4 class="footer-widget-title">Our Campus</h4>
-                            <ul class="footer-list">
-                                <li><a href="#"><i class="fas fa-caret-right"></i> Campus Safety</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> Student Activities</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> Academic Department</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> Planning & Administration</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> Office Of The Chancellor</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> Facility Services</a></li>
-                            </ul>
-                        </div>
+
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-widget-box list">
-                            <h4 class="footer-widget-title">Newsletter</h4>
-                            <div class="footer-newsletter">
-                                <p>Subscribe Our Newsletter To Get Latest Update And News</p>
-                                <div class="subscribe-form">
-                                    <form action="#">
-                                        <input type="email" class="form-control" placeholder="Your Email">
-                                        <button class="theme-btn" type="submit">
-                                            Subscribe Now <i class="far fa-paper-plane"></i>
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -426,7 +392,7 @@
                     <div class="row">
                         <div class="col-md-6 align-self-center">
                             <p class="copyright-text">
-                                &copy; Copyright <span id="date"></span> <a href="#"> Eduka </a> All Rights Reserved.
+                                © <span id="date"></span> <a href="#"> Université de Lille</a> - Tous Droits Réservés.
                             </p>
                         </div>
                         <div class="col-md-6 align-self-center">
